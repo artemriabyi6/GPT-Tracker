@@ -1,0 +1,232 @@
+.container {
+  max-width: 1500px;
+  margin: auto;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+input,
+textarea,
+button,
+select {
+  border: none;
+  outline: none;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.workout-card {
+  border: 1px solid teal;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+  width: 300px;
+  height: 500px;
+}
+
+body header {
+  background-color: black;
+  color: white;
+  margin-bottom: 100px;
+}
+body header .container {
+  max-width: 1900px;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0px;
+  align-items: center;
+}
+body header .container .header-logo {
+  width: 60px;
+}
+body header .container .header-logo img {
+  display: block;
+  width: 100%;
+  border-radius: 10%;
+}
+body header .container .header-description .header-title {
+  font-size: 25px;
+  font-family: Poppins;
+  font-weight: 600;
+}
+body header .container nav ul {
+  list-style: none;
+  display: flex;
+}
+body header .container nav ul li {
+  margin-right: 100px;
+}
+body header .container nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+body header .container nav ul li a:hover {
+  color: teal;
+}
+body header .container nav ul li:last-child {
+  margin-right: 0px;
+}
+body main section #addWorkoutBtn {
+  width: 200px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid teal;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+body main section .container .main-banner-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body main section .container .main-banner-wrapper .title {
+  font-size: 25px;
+  font-weight: 900;
+}
+body main section .container .archive {
+  display: flex;
+  align-items: center;
+}
+body main section .container .archive .workout-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 8px;
+  font-size: 17px;
+  position: relative;
+}
+body main section .container .archive .workout-card strong {
+  position: absolute;
+  left: 35%;
+  top: 30px;
+  margin-bottom: 10px;
+}
+body main section .container .archive .workout-card p {
+  font-size: 20px;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+body main section .container .archive .workout-card button {
+  margin-top: 20px;
+  padding: 5px 10px;
+  background-color: tomato;
+  cursor: pointer;
+  border-radius: 6px;
+  position: absolute;
+  left: 35%;
+  bottom: 30px;
+}
+body main section .container .modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px 40px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+body main section .container .modal #exercisesContainer .date-wrapper {
+  margin-bottom: 20px;
+}
+body main section .container .modal #exercisesContainer .exercise-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+body main section .container .modal #exercisesContainer .exercise-wrapper label {
+  margin-right: 10px;
+}
+body main section .container .modal #exercisesContainer .exercise-wrapper select {
+  border: 1px solid teal;
+  width: 80px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+body main section .container .modal #exercisesContainer .exercise-wrapper .set-input, body main section .container .modal #exercisesContainer .exercise-wrapper .rep-input {
+  width: 40px;
+  border: 1px solid teal;
+  text-align: center;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+body main section .container .modal #confirmWorkout {
+  background-color: hsl(120, 54%, 55%);
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+body main section .container .modal #confirmWorkout:hover {
+  background-color: hsl(120, 63%, 75%);
+}
+body main section .container .modal #closeModal {
+  background-color: hsl(9, 100%, 64%);
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  margin-top: 20px;
+}
+body main section .container .modal #closeModal:hover {
+  background-color: hsl(9, 80%, 64%);
+}/*# sourceMappingURL=style.css.map */
