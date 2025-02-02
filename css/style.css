@@ -317,20 +317,21 @@ body main section .container .modal #closeModal:hover {
     margin-bottom: 10px;
   }
   body main section .container .main-banner-wrapper .modal #exercisesContainer .exercise-wrapper label {
-    margin-right: 10px;
+    font-size: 10px;
+    margin-right: 5px;
   }
   body main section .container .main-banner-wrapper .modal #exercisesContainer .exercise-wrapper select {
     border: 1px solid teal;
     width: 40px;
-    margin-right: 20px;
+    margin-right: 10px;
     border-radius: 5px;
   }
   body main section .container .main-banner-wrapper .modal #exercisesContainer .exercise-wrapper .set-input, body main section .container .main-banner-wrapper .modal #exercisesContainer .exercise-wrapper .rep-input {
-    width: 20px;
+    width: 30px;
     border: 1px solid teal;
     text-align: center;
     border-radius: 5px;
-    margin-right: 20px;
+    margin-right: 10px;
   }
   body main section .container .main-banner-wrapper .modal #confirmWorkout {
     background-color: hsl(120, 54%, 55%);
@@ -360,6 +361,7 @@ body main section .container .modal #closeModal:hover {
   body main section .container .archive {
     display: flex;
     align-items: center;
+    flex-direction: column;
   }
   body main section .container .archive .workout-card {
     display: flex;

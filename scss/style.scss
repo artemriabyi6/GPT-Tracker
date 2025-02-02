@@ -357,20 +357,21 @@ body {
                   align-items: center;
                   margin-bottom: 10px;
                   label {
-                    margin-right: 10px;
+                    font-size: 10px;
+                    margin-right: 5px;
                   }
                   select {
                     border: 1px solid teal;
                     width: 40px;
-                    margin-right: 20px;
+                    margin-right: 10px;
                     border-radius: 5px;
                   }
                   .set-input, .rep-input {
-                    width: 20px;
+                    width: 30px;
                     border: 1px solid teal;
                     text-align: center;
                     border-radius: 5px;
-                    margin-right: 20px;
+                    margin-right: 10px;
                   }
 
                 }
@@ -407,6 +408,7 @@ body {
         .archive {
             display: flex;
             align-items: center;
+            flex-direction: column;
             .workout-card {
                 display: flex;
                 align-items: center;
