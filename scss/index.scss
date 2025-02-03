@@ -120,15 +120,25 @@ body {
 
   main {
     .main-banner {
-      //   height: calc(100vh - 80px); /* Висота екрану мінус висота хедера */
+      height: calc(100vh - 183px); /* Висота екрану мінус висота хедера */
       background-image: url("/images/5456517635173901866.jpg");
       background-size: 100% auto; /* Вписує зображення без обрізання */
       background-position: center;
       background-repeat: no-repeat;
       width: 100%;
-      height: 100vh;
       .container {
         .main-banner-wrapper {
+            position: relative;
+            .my-results {
+                width: 300px;
+                height: 300px;
+                background-color: white;
+                position: absolute;
+                border-top-left-radius: 75px;
+                border-top-right-radius: 75px;
+                border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 75px;
+            }
         }
       }
     }
@@ -179,16 +189,80 @@ body {
     }
     main {
       .main-banner {
-        //   height: calc(100vh - 80px); /* Висота екрану мінус висота хедера */
+        
         background-image: url("/images/5456517635173901866.jpg");
         background-size: 100% auto; /* Вписує зображення без обрізання */
         background-repeat: no-repeat;
         background-position: inherit;
         width: 100%;
-        height: 100vh;
         .container {
           .main-banner-wrapper {
+            position: relative;
+            .wish {
+                padding-right: 3px;
+                color: darkslategray;
+                text-align: center;
+                width: 84px;
+                height: 88px;
+                background-color:  #ffffff6e;
+                top: 15px;
+                right: 15px;
+                position: absolute;
+                border-top-left-radius: 89px;
+                border-top-right-radius: 11px;
+                border-bottom-left-radius: 19px;
+                border-bottom-right-radius: 226px;
+            }
+            .wish1 {
+                padding-right: 3px;
+                color: darkslategray;
+                text-align: center;
+                width: 84px;
+                height: 88px;
+                background-color: rgba(255, 255, 255, 0.431372549);
+                top: 353px;
+                position: absolute;
+                border-top-left-radius: 89px;
+                border-top-right-radius: 11px;
+                border-bottom-left-radius: 19px;
+                border-bottom-right-radius: 226px;
+            }
           }
+        }
+      }
+      .my-results {
+        padding: 50px 0px;
+        background-color: black;
+        .container {
+            .my-results-wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                text-transform: uppercase;
+                h3 {
+                    margin-bottom: 30px;
+                }
+                .my-stats {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    background-color: white;
+                    width: 80%;
+                    padding: 20px;
+                    border-radius: 12px;
+                    color: black;
+                    text-transform: none;
+                    .exercise-stats {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                        align-items: center;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
         }
       }
     }
