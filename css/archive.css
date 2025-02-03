@@ -63,18 +63,12 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.workout-card {
-  border: 1px solid teal;
-  padding: 70px 10px;
-  margin: 10px;
-  display: inline-block;
-  width: 300px;
-  height: 600px;
-}
-
-body header {
+body {
   background-color: black;
-  color: white;
+}
+body header {
+  background-color: rgba(255, 255, 255, 0.81);
+  color: black;
   margin-bottom: 100px;
 }
 body header .container {
@@ -96,6 +90,7 @@ body header .container .header-description .header-title {
   font-size: 25px;
   font-family: Poppins;
   font-weight: 600;
+  color: black;
 }
 body header .container nav ul {
   list-style: none;
@@ -106,7 +101,7 @@ body header .container nav ul li {
 }
 body header .container nav ul li a {
   text-decoration: none;
-  color: white;
+  color: black;
   transition: 0.2s ease-in-out;
 }
 body header .container nav ul li a:hover {
@@ -120,7 +115,7 @@ body main section #addWorkoutBtn {
   height: 50px;
   font-size: 18px;
   font-weight: 600;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.81);
   border-radius: 10px;
   border: 1px solid teal;
   cursor: pointer;
@@ -136,12 +131,19 @@ body main section .container .main-banner-wrapper .title {
   font-size: 25px;
   font-weight: 900;
   margin-bottom: 30px;
+  color: rgba(255, 255, 255, 0.81);
 }
 body main section .container .archive {
   display: flex;
   align-items: center;
 }
 body main section .container .archive .workout-card {
+  border: 1px solid white;
+  padding: 70px 10px;
+  margin: 10px;
+  display: inline-block;
+  width: 300px;
+  height: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -155,21 +157,23 @@ body main section .container .archive .workout-card strong {
   left: 35%;
   top: 30px;
   margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.81);
 }
 body main section .container .archive .workout-card p {
   font-size: 18px;
   font-weight: 200;
   margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.81);
 }
 body main section .container .archive .workout-card button {
   margin-top: 20px;
   padding: 5px 10px;
-  background-color: tomato;
+  background-color: rgba(255, 255, 255, 0.81);
   cursor: pointer;
   border-radius: 6px;
   position: absolute;
   left: 35%;
-  bottom: 30px;
+  bottom: 20px;
 }
 body main section .container .modal {
   display: none;
@@ -177,10 +181,11 @@ body main section .container .modal {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: white;
+  background-color: rgb(202, 198, 200);
   padding: 20px 40px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
 }
 body main section .container .modal #exercisesContainer .date-wrapper {
   margin-bottom: 20px;
@@ -194,14 +199,14 @@ body main section .container .modal #exercisesContainer .exercise-wrapper label 
   margin-right: 10px;
 }
 body main section .container .modal #exercisesContainer .exercise-wrapper select {
-  border: 1px solid teal;
+  border: 1px solid black;
   width: 80px;
   margin-right: 20px;
   border-radius: 5px;
 }
 body main section .container .modal #exercisesContainer .exercise-wrapper .set-input, body main section .container .modal #exercisesContainer .exercise-wrapper .rep-input, body main section .container .modal #exercisesContainer .exercise-wrapper .weight-input {
   width: 40px;
-  border: 1px solid teal;
+  border: 1px solid black;
   text-align: center;
   border-radius: 5px;
   margin-right: 20px;
@@ -234,9 +239,9 @@ body main section .container .modal #closeModal:hover {
 
 @media (max-width: 565px) {
   body header {
-    background-color: black;
-    color: white;
-    margin-bottom: 100px;
+    background-color: rgba(255, 255, 255, 0.81);
+    color: black;
+    margin-bottom: 60px;
   }
   body header .container {
     max-width: 1900px;
@@ -260,7 +265,7 @@ body main section .container .modal #closeModal:hover {
   body header .container nav ul li a {
     font-size: 10px;
     text-decoration: none;
-    color: white;
+    color: black;
     transition: 0.2s ease-in-out;
   }
   body header .container nav ul li a:hover {
@@ -279,7 +284,7 @@ body main section .container .modal #closeModal:hover {
     height: 50px;
     font-size: 18px;
     font-weight: 600;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.81);
     border-radius: 10px;
     border: 1px solid teal;
     cursor: pointer;
@@ -301,7 +306,7 @@ body main section .container .modal #closeModal:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: white;
+    background-color: rgb(202, 198, 200);
     padding: 10px 10px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -322,20 +327,20 @@ body main section .container .modal #closeModal:hover {
     margin-right: 5px;
   }
   body main section .container .main-banner-wrapper .modal #exercisesContainer .exercise-wrapper select {
-    border: 1px solid teal;
+    border: 1px solid black;
     width: 40px;
     margin-right: 10px;
     border-radius: 5px;
   }
   body main section .container .main-banner-wrapper .modal #exercisesContainer .exercise-wrapper .set-input, body main section .container .main-banner-wrapper .modal #exercisesContainer .exercise-wrapper .rep-input, body main section .container .main-banner-wrapper .modal #exercisesContainer .exercise-wrapper .weight-input {
     width: 30px;
-    border: 1px solid teal;
+    border: 1px solid black;
     text-align: center;
     border-radius: 5px;
     margin-right: 10px;
   }
   body main section .container .main-banner-wrapper .modal #confirmWorkout {
-    background-color: hsl(120, 54%, 55%);
+    background-color: hsl(120, 28.12%, 84.44%);
     padding: 5px 10px;
     border-radius: 8px;
     border: 1px solid black;
@@ -348,7 +353,7 @@ body main section .container .modal #closeModal:hover {
     background-color: hsl(120, 63%, 75%);
   }
   body main section .container .main-banner-wrapper .modal #closeModal {
-    background-color: hsl(9, 100%, 64%);
+    background-color: hsl(9, 64.88%, 77.13%);
     padding: 5px 10px;
     border-radius: 8px;
     border: 1px solid black;
@@ -372,6 +377,7 @@ body main section .container .modal #closeModal:hover {
     border-radius: 8px;
     font-size: 17px;
     position: relative;
+    height: auto;
   }
   body main section .container .archive .workout-card strong {
     position: absolute;
@@ -387,11 +393,11 @@ body main section .container .modal #closeModal:hover {
   body main section .container .archive .workout-card button {
     margin-top: 20px;
     padding: 5px 10px;
-    background-color: tomato;
+    background-color: rgba(255, 255, 255, 0.81);
     cursor: pointer;
     border-radius: 6px;
     position: absolute;
     left: 35%;
-    bottom: 30px;
+    bottom: 20px;
   }
 }/*# sourceMappingURL=archive.css.map */

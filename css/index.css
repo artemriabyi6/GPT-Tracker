@@ -108,7 +108,7 @@ body header .container nav ul li:last-child {
   margin-right: 0px;
 }
 body main .main-banner {
-  height: calc(100vh - 183px); /* Висота екрану мінус висота хедера */
+  height: 100vh;
   background-image: url("/images/5456517635173901866.jpg");
   background-size: 100% auto; /* Вписує зображення без обрізання */
   background-position: center;
@@ -131,8 +131,8 @@ body main .main-banner .container .main-banner-wrapper .my-results {
 
 @media (max-width: 565px) {
   body header {
-    background-color: black;
-    color: white;
+    background-color: #c9c9c9;
+    color: black;
   }
   body header .container {
     max-width: 1900px;
@@ -156,7 +156,7 @@ body main .main-banner .container .main-banner-wrapper .my-results {
   body header .container nav ul li a {
     font-size: 10px;
     text-decoration: none;
-    color: white;
+    color: black;
     transition: 0.2s ease-in-out;
   }
   body header .container nav ul li a:hover {
@@ -169,19 +169,20 @@ body main .main-banner .container .main-banner-wrapper .my-results {
     background-image: url("/images/5456517635173901866.jpg");
     background-size: 100% auto; /* Вписує зображення без обрізання */
     background-repeat: no-repeat;
-    background-position: inherit;
+    background-size: cover;
+    background-position: center;
     width: 100%;
   }
   body main .main-banner .container .main-banner-wrapper {
     position: relative;
   }
   body main .main-banner .container .main-banner-wrapper .wish {
-    padding-right: 3px;
-    color: darkslategray;
+    padding-right: 10px;
+    color: black;
     text-align: center;
     width: 84px;
     height: 88px;
-    background-color: rgba(255, 255, 255, 0.431372549);
+    background-color: #c9c9c9;
     top: 15px;
     right: 15px;
     position: absolute;
@@ -191,13 +192,14 @@ body main .main-banner .container .main-banner-wrapper .my-results {
     border-bottom-right-radius: 226px;
   }
   body main .main-banner .container .main-banner-wrapper .wish1 {
-    padding-right: 3px;
-    color: darkslategray;
+    padding-right: 11px;
+    color: black;
     text-align: center;
     width: 84px;
     height: 88px;
-    background-color: rgba(255, 255, 255, 0.431372549);
-    top: 353px;
+    background-color: #c9c9c9;
+    top: 520px;
+    left: 20px;
     position: absolute;
     border-top-left-radius: 89px;
     border-top-right-radius: 11px;
@@ -213,7 +215,7 @@ body main .main-banner .container .main-banner-wrapper .my-results {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #c9c9c9;
     text-transform: uppercase;
   }
   body main .my-results .container .my-results-wrapper h3 {
@@ -223,7 +225,7 @@ body main .main-banner .container .main-banner-wrapper .my-results {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.81);
     width: 80%;
     padding: 20px;
     border-radius: 12px;

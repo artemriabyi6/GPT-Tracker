@@ -158,10 +158,13 @@ body .training-library .container .training-library-wrapper .upper-body-block .u
 }
 
 @media (max-width: 565px) {
-  body header {
+  body {
     background-color: black;
-    color: white;
-    margin-bottom: 50px;
+  }
+  body header {
+    background-color: rgba(255, 255, 255, 0.81);
+    color: black;
+    margin-bottom: 60px;
   }
   body header .container {
     max-width: 1900px;
@@ -185,7 +188,7 @@ body .training-library .container .training-library-wrapper .upper-body-block .u
   body header .container nav ul li a {
     font-size: 10px;
     text-decoration: none;
-    color: white;
+    color: black;
     transition: 0.2s ease-in-out;
   }
   body header .container nav ul li a:hover {
@@ -199,10 +202,12 @@ body .training-library .container .training-library-wrapper .upper-body-block .u
     margin-bottom: 60px;
     font-size: 30px;
     font-weight: 900;
+    color: rgba(255, 255, 255, 0.81);
   }
   body .training-library .container .training-library-wrapper .upper-body-block h2, body .training-library .container .training-library-wrapper .lower-body-block h2 {
     margin-left: 10px;
     margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.81);
   }
   body .training-library .container .training-library-wrapper .upper-body-block .upper-body-block-wrapper, body .training-library .container .training-library-wrapper .upper-body-block .lower-body-block-wrapper, body .training-library .container .training-library-wrapper .lower-body-block .upper-body-block-wrapper, body .training-library .container .training-library-wrapper .lower-body-block .lower-body-block-wrapper {
     flex-direction: column;
@@ -220,6 +225,7 @@ body .training-library .container .training-library-wrapper .upper-body-block .u
     margin-bottom: 20px;
     margin-right: 0;
     position: inherit;
+    background-color: rgba(255, 255, 255, 0.81);
   }
   body .training-library .container .training-library-wrapper .upper-body-block .upper-body-block-wrapper .example-card .card-title, body .training-library .container .training-library-wrapper .upper-body-block .lower-body-block-wrapper .example-card .card-title, body .training-library .container .training-library-wrapper .lower-body-block .upper-body-block-wrapper .example-card .card-title, body .training-library .container .training-library-wrapper .lower-body-block .lower-body-block-wrapper .example-card .card-title {
     text-align: center;
@@ -229,6 +235,7 @@ body .training-library .container .training-library-wrapper .upper-body-block .u
     font-style: italic;
     text-transform: uppercase;
     position: inherit;
+    color: black;
   }
   body .training-library .container .training-library-wrapper .upper-body-block .upper-body-block-wrapper .example-card .video-wrapper, body .training-library .container .training-library-wrapper .upper-body-block .lower-body-block-wrapper .example-card .video-wrapper, body .training-library .container .training-library-wrapper .lower-body-block .upper-body-block-wrapper .example-card .video-wrapper, body .training-library .container .training-library-wrapper .lower-body-block .lower-body-block-wrapper .example-card .video-wrapper {
     max-width: 200px;

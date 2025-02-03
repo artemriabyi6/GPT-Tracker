@@ -186,47 +186,48 @@ body {
 
 @media (max-width: 565px) {
     body {
-        header {
-            background-color: black;
-            color: white;
-            margin-bottom: 50px;
-            .container {
-              max-width: 1900px;
+      background-color: black;
+      header {
+        background-color: rgb(255 255 255 / 81%);      
+        color: black;
+        margin-bottom: 60px;
+        .container {
+          max-width: 1900px;
+          display: flex;
+          justify-content: space-between;
+          padding: 20px 20px;
+          align-items: center;
+         
+          .header-description {
+            .header-title {
+              font-size: 18px;
+              font-family: Poppins;
+              font-weight: 600;
+            }
+          }
+          nav {
+            ul {
+              list-style: none;
               display: flex;
-              justify-content: space-between;
-              padding: 20px 20px;
-              align-items: center;
-             
-              .header-description {
-                .header-title {
-                  font-size: 18px;
-                  font-family: Poppins;
-                  font-weight: 600;
-                }
-              }
-              nav {
-                ul {
-                  list-style: none;
-                  display: flex;
-                  li {
-                    margin-right: 20px;
-                    a {
-                      font-size: 10px;
-                      text-decoration: none;
-                      color: white;
-                      transition: 0.2s ease-in-out;
-                      &:hover {
-                        color: teal;
-                      }
-                    }
-                    &:last-child {
-                      margin-right: 0px;
-                    }
+              li {
+                margin-right: 20px;
+                a {
+                  font-size: 10px;
+                  text-decoration: none;
+                  color: black;
+                  transition: 0.2s ease-in-out;
+                  &:hover {
+                    color: teal;
                   }
+                }
+                &:last-child {
+                  margin-right: 0px;
                 }
               }
             }
           }
+        }
+      }
           
           .training-library {
             .container {
@@ -235,12 +236,16 @@ body {
                     margin-bottom: 60px;
                     font-size: 30px;
                     font-weight: 900;
+                    color: rgb(255 255 255 / 81%);      
+
                 }
                 .training-library-wrapper {
                     .upper-body-block, .lower-body-block {
                         h2{
                             margin-left: 10px;
                             margin-bottom: 20px;
+                    color: rgb(255 255 255 / 81%);      
+
                         }
                         .upper-body-block-wrapper, .lower-body-block-wrapper{
                             flex-direction: column;
@@ -257,6 +262,7 @@ body {
                                 margin-bottom: 20px;
                                 margin-right: 0;
                                 position: inherit;
+                                background-color: rgb(255 255 255 / 81%) ;
                                 .card-title {
                                     text-align: center;
                                     font-size: 22px;
@@ -265,6 +271,7 @@ body {
                                     font-style: italic;
                                     text-transform: uppercase;
                                     position: inherit;
+                                    color: black;
                                 }
                                 .video-wrapper {
                                     max-width: 200px;
