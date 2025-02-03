@@ -120,13 +120,13 @@ body {
 
   main {
     .main-banner {
-    //   height: calc(100vh - 80px); /* Висота екрану мінус висота хедера */
+      //   height: calc(100vh - 80px); /* Висота екрану мінус висота хедера */
       background-image: url("/images/5456517635173901866.jpg");
-  background-size: 100% auto;  /* Вписує зображення без обрізання */
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100vh;
+      background-size: 100% auto; /* Вписує зображення без обрізання */
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100vh;
       .container {
         .main-banner-wrapper {
         }
@@ -173,6 +173,21 @@ body {
                 margin-right: 0px;
               }
             }
+          }
+        }
+      }
+    }
+    main {
+      .main-banner {
+        //   height: calc(100vh - 80px); /* Висота екрану мінус висота хедера */
+        background-image: url("/images/5456517635173901866.jpg");
+        background-size: 100% auto; /* Вписує зображення без обрізання */
+        background-repeat: no-repeat;
+        background-position: inherit;
+        width: 100%;
+        height: 100vh;
+        .container {
+          .main-banner-wrapper {
           }
         }
       }
