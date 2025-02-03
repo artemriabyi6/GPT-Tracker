@@ -28,22 +28,23 @@ document.addEventListener("DOMContentLoaded", () => {
                 <select name="exercise${i}" id="exercise${i}" >
                     <option value="Shoulder press">Shoulder press</option>
                     <option value="Dead lift">Dead lift</option>
-                    <option value="Squat with dumbbel">Squat with dumbbel</option>
+                    <option value="Squats with dumbbel">Squats with dumbbel</option>
                     <option value="Push-up">Push-up</option>
-                    <option value="Crunch">Crunch</option>
-                    <option value="Dumbbel lunge">Dumbbel lunge</option>
-                    <option value="Front pull-down">Front pull-down</option>
+                    <option value="Crunches">Crunches</option>
+                    <option value="lunges">lunges</option>
+                    <option value="Lat pulldowns">Lat pulldowns</option>
                     <option value="Cable glute">Cable glute</option>
-                    <option value="Single leg squat">Single leg squat</option>
-                    <option value="Cable straight">Cable straight</option>
-                    <option value="Pull-Up">Pull-up</option>
+                    <option value="Seated cable row">Seated cable row</option>
+                    <option value="Biceps curl">Biceps curl</option>
+                    <option value="Glute bridge">Glute bridge</option>
+                    <option value="Leg extension">Leg extension</option>
                 </select>
                 <label for="set${i}">Підходи:</label>
                 <input type="number" value="1" id="set${i}" min="1" class="set-input">
                 <label for="rep${i}">Повторення:</label>
                 <input type="number" value="10" id="rep${i}" min="1" class="rep-input">
                 <label for="weight${i}">🏋️‍♀️:</label>
-                <input type="number" value="10" id="weight${i}" min="1" class="weight-input">
+                <input type="number" value="10" id="weight${i}" min="0" class="weight-input">
             `;
             exercisesContainer.appendChild(wrapper);
         }
