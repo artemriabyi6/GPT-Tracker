@@ -110,6 +110,24 @@ body header .container nav ul li a:hover {
 body header .container nav ul li:last-child {
   margin-right: 0px;
 }
+body main section .page-btn {
+  background-color: rgba(255, 255, 255, 0.81);
+  padding: 8px;
+  color: black;
+  margin-right: 10px;
+  cursor: pointer;
+  margin: 20px 20px 20px 0px;
+  border-radius: 5px;
+}
+body main section .page-btn.active {
+  background-color: rgba(255, 255, 255, 0.51);
+  padding: 8px;
+  color: black;
+  margin-right: 10px;
+  cursor: pointer;
+  margin: 20px 20px 20px 0px;
+  border-radius: 5px;
+}
 body main section #addWorkoutBtn {
   width: 200px;
   height: 50px;
