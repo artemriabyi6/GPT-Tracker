@@ -193,6 +193,7 @@ body main section .container .archive .workout-card button {
   position: absolute;
   left: 35%;
   bottom: 20px;
+  color: black;
 }
 body main section .container .modal {
   display: none;
