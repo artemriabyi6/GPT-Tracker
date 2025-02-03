@@ -198,7 +198,7 @@ body main section .container .modal #exercisesContainer .exercise-wrapper select
   margin-right: 20px;
   border-radius: 5px;
 }
-body main section .container .modal #exercisesContainer .exercise-wrapper .set-input, body main section .container .modal #exercisesContainer .exercise-wrapper .rep-input {
+body main section .container .modal #exercisesContainer .exercise-wrapper .set-input, body main section .container .modal #exercisesContainer .exercise-wrapper .rep-input, body main section .container .modal #exercisesContainer .exercise-wrapper .weight-input {
   width: 40px;
   border: 1px solid teal;
   text-align: center;
@@ -326,7 +326,7 @@ body main section .container .modal #closeModal:hover {
     margin-right: 10px;
     border-radius: 5px;
   }
-  body main section .container .main-banner-wrapper .modal #exercisesContainer .exercise-wrapper .set-input, body main section .container .main-banner-wrapper .modal #exercisesContainer .exercise-wrapper .rep-input {
+  body main section .container .main-banner-wrapper .modal #exercisesContainer .exercise-wrapper .set-input, body main section .container .main-banner-wrapper .modal #exercisesContainer .exercise-wrapper .rep-input, body main section .container .main-banner-wrapper .modal #exercisesContainer .exercise-wrapper .weight-input {
     width: 30px;
     border: 1px solid teal;
     text-align: center;

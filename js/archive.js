@@ -42,6 +42,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 <input type="number" value="1" id="set${i}" min="1" class="set-input">
                 <label for="rep${i}">Повторення:</label>
                 <input type="number" value="10" id="rep${i}" min="1" class="rep-input">
+                <label for="weight${i}">🏋️‍♀️:</label>
+                <input type="number" value="10" id="weight${i}" min="1" class="weight-input">
             `;
             exercisesContainer.appendChild(wrapper);
         }
@@ -59,6 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 exercise: wrapper.querySelector("select").value,
                 sets: wrapper.querySelector(".set-input").value,
                 reps: wrapper.querySelector(".rep-input").value,
+                weights: wrapper.querySelector(".weight-input").value
             });
         });
 
@@ -79,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
             workoutCard.classList.add("workout-card");
             workoutCard.innerHTML = `<strong>${workout.date}</strong>`;
             workout.exercises.forEach(ex => {
-                workoutCard.innerHTML += `<p>${ex.exercise} ${ex.sets} x ${ex.reps}</p>`;
+                workoutCard.innerHTML += `<p>${ex.exercise} ${ex.sets} x ${ex.reps} (${ex.weights}kg)</p>`;
             });
             
             const deleteBtn = document.createElement("button");
