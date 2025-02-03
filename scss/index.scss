@@ -1,0 +1,181 @@
+.container {
+  max-width: 1500px;
+  margin: auto;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+
+// Remove default styles from links
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// Remove list styles
+ul,
+ol {
+  list-style: none;
+}
+
+// Remove form input styles
+input,
+textarea,
+button,
+select {
+  border: none;
+  outline: none;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+// Remove table styles
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+// Reset image styles
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+// Set default styles for headers
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin: 0;
+}
+
+// Set default styles for paragraphs
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  header {
+    background-color: black;
+    color: white;
+    .container {
+      max-width: 1900px;
+      display: flex;
+      justify-content: space-around;
+      padding: 20px 0px;
+      align-items: center;
+      .header-logo {
+        width: 60px;
+        img {
+          display: block;
+          width: 100%;
+          border-radius: 10%;
+        }
+      }
+      .header-description {
+        .header-title {
+          font-size: 25px;
+          font-family: Poppins;
+          font-weight: 600;
+        }
+      }
+      nav {
+        ul {
+          list-style: none;
+          display: flex;
+          li {
+            margin-right: 100px;
+            a {
+              text-decoration: none;
+              color: white;
+              transition: 0.2s ease-in-out;
+              &:hover {
+                color: teal;
+              }
+            }
+            &:last-child {
+              margin-right: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    .main-banner {
+    //   height: calc(100vh - 80px); /* Висота екрану мінус висота хедера */
+      background-image: url("/images/5456517635173901866.jpg");
+  background-size: 100% auto;  /* Вписує зображення без обрізання */
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+      .container {
+        .main-banner-wrapper {
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 565px) {
+  body {
+    header {
+      background-color: black;
+      color: white;
+      .container {
+        max-width: 1900px;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 20px;
+        align-items: center;
+
+        .header-description {
+          .header-title {
+            font-size: 18px;
+            font-family: Poppins;
+            font-weight: 600;
+          }
+        }
+        nav {
+          ul {
+            list-style: none;
+            display: flex;
+            li {
+              margin-right: 20px;
+              a {
+                font-size: 10px;
+                text-decoration: none;
+                color: white;
+                transition: 0.2s ease-in-out;
+                &:hover {
+                  color: teal;
+                }
+              }
+              &:last-child {
+                margin-right: 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

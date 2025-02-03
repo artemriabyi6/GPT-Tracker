@@ -1,0 +1,154 @@
+@charset "UTF-8";
+.container {
+  max-width: 1500px;
+  margin: auto;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+input,
+textarea,
+button,
+select {
+  border: none;
+  outline: none;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body header {
+  background-color: black;
+  color: white;
+}
+body header .container {
+  max-width: 1900px;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0px;
+  align-items: center;
+}
+body header .container .header-logo {
+  width: 60px;
+}
+body header .container .header-logo img {
+  display: block;
+  width: 100%;
+  border-radius: 10%;
+}
+body header .container .header-description .header-title {
+  font-size: 25px;
+  font-family: Poppins;
+  font-weight: 600;
+}
+body header .container nav ul {
+  list-style: none;
+  display: flex;
+}
+body header .container nav ul li {
+  margin-right: 100px;
+}
+body header .container nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+body header .container nav ul li a:hover {
+  color: teal;
+}
+body header .container nav ul li:last-child {
+  margin-right: 0px;
+}
+body main .main-banner {
+  background-image: url("/images/5456517635173901866.jpg");
+  background-size: 100% auto; /* Вписує зображення без обрізання */
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+@media (max-width: 565px) {
+  body header {
+    background-color: black;
+    color: white;
+  }
+  body header .container {
+    max-width: 1900px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    align-items: center;
+  }
+  body header .container .header-description .header-title {
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 600;
+  }
+  body header .container nav ul {
+    list-style: none;
+    display: flex;
+  }
+  body header .container nav ul li {
+    margin-right: 20px;
+  }
+  body header .container nav ul li a {
+    font-size: 10px;
+    text-decoration: none;
+    color: white;
+    transition: 0.2s ease-in-out;
+  }
+  body header .container nav ul li a:hover {
+    color: teal;
+  }
+  body header .container nav ul li:last-child {
+    margin-right: 0px;
+  }
+}/*# sourceMappingURL=index.css.map */
