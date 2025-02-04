@@ -49,7 +49,12 @@ img {
   display: block;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: normal;
   margin: 0;
 }
@@ -224,7 +229,9 @@ body main section .container .modal #exercisesContainer .exercise-wrapper select
   margin-right: 20px;
   border-radius: 5px;
 }
-body main section .container .modal #exercisesContainer .exercise-wrapper .set-input, body main section .container .modal #exercisesContainer .exercise-wrapper .rep-input, body main section .container .modal #exercisesContainer .exercise-wrapper .weight-input {
+body main section .container .modal #exercisesContainer .exercise-wrapper .set-input,
+body main section .container .modal #exercisesContainer .exercise-wrapper .rep-input,
+body main section .container .modal #exercisesContainer .exercise-wrapper .weight-input {
   width: 40px;
   border: 1px solid black;
   text-align: center;
@@ -352,7 +359,9 @@ body main section .container .modal #closeModal:hover {
     margin-right: 10px;
     border-radius: 5px;
   }
-  body main section .container .main-banner-wrapper .modal #exercisesContainer .exercise-wrapper .set-input, body main section .container .main-banner-wrapper .modal #exercisesContainer .exercise-wrapper .rep-input, body main section .container .main-banner-wrapper .modal #exercisesContainer .exercise-wrapper .weight-input {
+  body main section .container .main-banner-wrapper .modal #exercisesContainer .exercise-wrapper .set-input,
+  body main section .container .main-banner-wrapper .modal #exercisesContainer .exercise-wrapper .rep-input,
+  body main section .container .main-banner-wrapper .modal #exercisesContainer .exercise-wrapper .weight-input {
     width: 30px;
     border: 1px solid black;
     text-align: center;

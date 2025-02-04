@@ -174,6 +174,9 @@ document.addEventListener("DOMContentLoaded", () => {
                     <option value="Biceps curl">Biceps curl</option>
                     <option value="Glute bridge">Glute bridge</option>
                     <option value="Leg extension">Leg extension</option>
+                    <option value="Abductions">Abductions</option>
+                    <option value="Adductions">Adductions</option>
+
                 </select>
                 <label for="set${i}">Підходи:</label>
                 <input type="number" value="1" id="set${i}" min="1" class="set-input">
@@ -184,6 +187,7 @@ document.addEventListener("DOMContentLoaded", () => {
             `;
             exercisesContainer.appendChild(wrapper);
         }
+        modal.classList.add("show");
         modal.style.display = "block";
         document.body.style.overflow = "hidden";
         addWorkoutBtn.style.display = 'none'
@@ -234,6 +238,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const endIndex = startIndex + ITEMS_PER_PAGE;
         const workoutsToShow = workouts.slice(startIndex, endIndex);
 
+        
+
         workoutsToShow.forEach((workout, index) => {
             const workoutCard = document.createElement("div");
             workoutCard.classList.add("workout-card");
@@ -246,6 +252,7 @@ document.addEventListener("DOMContentLoaded", () => {
             deleteBtn.textContent = "Видалити";
             deleteBtn.addEventListener("click", () => {
                 workouts.splice(startIndex + index, 1);
+                
                 localStorage.setItem("workouts", JSON.stringify(workouts));
                 displayWorkouts();
             });
