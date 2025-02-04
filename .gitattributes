@@ -1,0 +1,1 @@
+*.великий_формат_файлу filter=lfs diff=lfs merge=lfs -text
