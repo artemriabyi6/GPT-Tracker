@@ -1,0 +1,6 @@
+{
+  "appId": "com.example.GymTracker",
+  "appName": "GymTracker",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}

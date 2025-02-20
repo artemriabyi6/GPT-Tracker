@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@capacitor/core": "^7.0.1",
+    "@capacitor/ios": "^7.0.1"
+  }
+}
