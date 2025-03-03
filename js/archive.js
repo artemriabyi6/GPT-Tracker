@@ -49,8 +49,10 @@ document.addEventListener("DOMContentLoaded", () => {
                     <option value="Leg extension">Leg extension</option>
                     <option value="Bulgarian squat">Bulgarian squat</option>
                     <option value="Dumbbel bench press">Dumbbel bench press</option>
+
                     <option value="Abductions">Abductions</option>
                     <option value="Adductions">Adductions</option>
+
                 </select>
                 <label for="set${i}">Підходи:</label>
                 <input type="number" value="1" id="set${i}" min="1" class="set-input">
